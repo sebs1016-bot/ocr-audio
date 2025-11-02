@@ -40,7 +40,22 @@ def remove_files(n):
 
 remove_files(7)
   
-
+st.markdown("""
+<style>
+.stApp {
+    background: linear-gradient(135deg, #7b2ff7, #f107a3, #00d4ff);
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+</style>
+""", unsafe_allow_html=True)
 
 
 st.title("Reconocimiento Óptico de Caracteres")
